@@ -19,13 +19,17 @@ body {
   background-color: #f7f7f7;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 9.6rem;
   background-color: #444444;
   margin-bottom: 6.5rem;
+}
+
+footer {
+  padding: 12.8rem 0;
 }
 
 .logo img {

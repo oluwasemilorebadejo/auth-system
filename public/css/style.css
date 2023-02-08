@@ -16,6 +16,7 @@ body {
   color: #555;
   overflow-x: hidden;
   width: 100%;
+  background-color: #f7f7f7;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 9.6rem;
-  background-color: #f2f2f2;
+  background-color: #444444;
   margin-bottom: 6.5rem;
 }
 
@@ -59,13 +60,14 @@ header {
 
 .form--label {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.65rem;
 }
 
 .form--input {
   border-radius: 0.85rem;
   height: 4rem;
+  padding: 1rem;
 }
 
 .btn--container {
@@ -90,13 +92,12 @@ header {
   transition: all 0.3s;
 }
 
-.btn:hover {
-  background-color: #cf711f;
+.btn:link,
+.btn:visited {
+  background-color: #f3f2f2;
 }
 
-.btn:hover {
-  /* -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); */
-  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); */
+.btn--login:hover,
+.btn--full:active {
+  background-color: #00000038;
 }

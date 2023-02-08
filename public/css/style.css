@@ -34,13 +34,13 @@ br {
   height: 50px;
 }
 
-.form {
+.form--container {
   display: flex;
   justify-content: center;
 }
 
-.login-form {
-  display: inherit;
+.form {
+  display: flex;
   flex-direction: column;
 }
 

@@ -16,3 +16,54 @@ body {
   color: #555;
   overflow-x: hidden;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f2f2f2;
+  margin-bottom: 5rem;
+}
+
+br {
+  margin: 10rem 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  display: inherit;
+  flex-direction: column;
+}
+
+.form--label {
+  font-size: 2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*Add later when we use this for the button in form*/
+  border: none;
+  cursor: pointer;
+}

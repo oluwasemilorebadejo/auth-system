@@ -27,4 +27,39 @@
 
     <title>Simple Authentication System</title>
   </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+    </header>
+
+    <div class="form">
+      <form class="login-form">
+        <label class="form--label" for="username">Username:</label>
+        <br />
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+        <br /><br /><br /><br />
+        <label class="form--label" for="password">Password:</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="••••••••"
+          minlength="8"
+          required
+        />
+        <br /><br />
+        <!-- <input type="submit" value="Submit" /> -->
+        <button class="btn">Log In</button>
+      </form>
+    </div>
+  </body>
 </html>

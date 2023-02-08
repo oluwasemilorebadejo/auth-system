@@ -15,23 +15,27 @@ body {
   font-weight: 300;
   color: #555;
   overflow-x: hidden;
+  width: 100%;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 9.6rem;
   background-color: #f2f2f2;
-  margin-bottom: 5rem;
-}
-
-br {
-  margin: 10rem 0;
+  margin-bottom: 6.5rem;
 }
 
 .logo img {
   height: 50px;
+}
+
+.heading--2 {
+  text-align: center;
+  padding-right: 1.5rem;
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
 }
 
 .form--container {
@@ -40,30 +44,59 @@ br {
 }
 
 .form {
+  width: 28.1rem;
+}
+
+.form--group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.zmb {
+  margin-bottom: 0;
 }
 
 .form--label {
   font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+
+.form--input {
+  border-radius: 0.85rem;
+  height: 4rem;
+}
+
+.btn--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .btn,
 .btn:link,
 .btn:visited {
-  font-size: 1.6rem;
-  padding: 1.4rem 3rem;
-  border-radius: 10rem;
-  text-transform: uppercase;
   display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
   text-decoration: none;
-  position: relative;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  font-weight: 400;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /*Add later when we use this for the button in form*/
+  padding: 1.6rem 3.2rem;
+  /*ONLY NECCESSARY FOR .btn*/
   border: none;
   cursor: pointer;
+  font-family: inherit;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #cf711f;
+}
+
+.btn:hover {
+  /* -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); */
+  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); */
 }

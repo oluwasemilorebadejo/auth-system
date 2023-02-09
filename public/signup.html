@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-signup.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
     <script
@@ -106,7 +106,7 @@
             <input
               class="form--input"
               type="password"
-              id="password"
+              id="password-confirm"
               name="password"
               placeholder="Confirm your password"
               minlength="8"
@@ -117,8 +117,41 @@
           <div class="btn--container">
             <button class="btn btn--login no-wrap">Sign Up</button>
           </div>
+
+          <p class="sign-up--ii">
+            Already have an account?
+            <a href="/public/index.html" class="link">
+              <span style="color: #339af0">Sign In now</span>
+            </a>
+          </p>
         </form>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+
+      <div class="socials--container">
+        <ul class="socials">
+          <li>
+            <a href="#" class="footer-link"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer-link"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer-link"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

@@ -54,7 +54,7 @@ ul {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #dee2e6;
 }
 
@@ -161,13 +161,6 @@ ul {
   font-size: 1.4rem;
 }
 
-.sign-up {
-  margin-top: 0.6rem;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.4rem;
-}
-
 .sign-up--ii {
   margin-top: 1.8rem;
   text-align: center;
@@ -187,7 +180,6 @@ ul {
 
 /* 840px  920 height */
 /* 1rem = 1em = 16px */
-
 @media (min-height: 52.5em) and (max-height: 57.5em) {
   .header {
     padding-top: 13rem;
@@ -208,7 +200,7 @@ ul {
   }
 
   .form--group {
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.4rem;
   }
 
   .form--input {
@@ -225,15 +217,15 @@ ul {
     font-size: 1.7rem;
   }
 
-  .sign-up {
-    margin-top: 1rem;
+  .sign-up--ii {
+    margin-top: 2.4rem;
     text-align: center;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .footer {
-    padding: 11.6rem 0;
+    padding: 5.6rem 0;
   }
 
   .footer-link {
@@ -246,5 +238,31 @@ ul {
   .btn:visited {
     margin-top: 2.8rem;
     height: 5.2rem;
+  }
+}
+
+/* 640px 670px */
+/* 1rem = 1em = 16px */
+@media (min-height: 40em) and (max-height: 41.9em) {
+  .header {
+    padding-top: 10rem;
+  }
+
+  .footer {
+    padding: 1.6rem 0;
+  }
+
+  .form--input {
+    height: 3.8rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    height: 3.8rem;
+  }
+
+  .sign-up--ii {
+    margin-top: 2rem;
   }
 }

@@ -19,6 +19,10 @@ body {
   background-color: #fff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -28,12 +32,14 @@ body {
   padding-top: 12rem;
 }
 
-footer {
-  padding: 12.8rem 0;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6.6rem 0;
 }
 
 .logo img {
-  height: 50px;
+  height: 5rem;
 }
 
 .heading--2 {
@@ -70,7 +76,7 @@ footer {
 }
 
 .zmb {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 /* .form--label {
@@ -160,4 +166,13 @@ footer {
   text-align: center;
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+.socials {
+  display: flex;
+}
+
+.footer-link {
+  margin: 0 1.2rem;
+  font-size: 2rem;
 }

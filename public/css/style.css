@@ -254,7 +254,4 @@ ul {
 /* 360px  375 height */
 /* 1rem = 1em = 16px */
 @media (min-width: 22.5em) and (max-width: 23.45em) {
-  .logo img {
-    height: 2.8rem;
-  }
 }

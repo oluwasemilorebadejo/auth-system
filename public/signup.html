@@ -35,7 +35,7 @@
 
     <script defer src="js/script.js"></script>
 
-    <title>Simple Authentication System || Login now</title>
+    <title>Sign up now</title>
   </head>
   <body>
     <header class="header">
@@ -45,8 +45,9 @@
     </header>
 
     <main>
-      <h2 class="heading--2">Welcome Back</h2>
-      <p class="cred-message">Enter your credentials to access this account.</p>
+      <h2 class="heading--2">New here?</h2>
+      <p class="cred-message">Create your account now.</p>
+
       <div class="form--container">
         <form class="form">
           <div class="form--group">
@@ -65,7 +66,23 @@
             />
           </div>
 
-          <div class="form--group zmb">
+          <div class="form--group">
+            <!-- <label class="form--label" for="username">Username</label> -->
+            <i class="form-control-icon"
+              ><ion-icon name="person-outline"></ion-icon>
+            </i>
+
+            <input
+              class="form--input"
+              type="text"
+              id="username"
+              placeholder="Enter username"
+              name="username"
+              required
+            />
+          </div>
+
+          <div class="form--group">
             <!-- <label class="form--label" for="password">Password</label> -->
             <i class="form-control-icon"
               ><ion-icon name="lock-closed-outline"></ion-icon>
@@ -81,50 +98,27 @@
             />
           </div>
 
+          <div class="form--group zmb">
+            <!-- <label class="form--label" for="password">Password</label> -->
+            <i class="form-control-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon>
+            </i>
+            <input
+              class="form--input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Confirm your password"
+              minlength="8"
+              required
+            />
+          </div>
+
           <div class="btn--container">
-            <button class="btn btn--login no-wrap">Sign In</button>
+            <button class="btn btn--login no-wrap">Sign Up</button>
           </div>
         </form>
       </div>
-
-      <p class="forgot-password">
-        Forgot your password?
-        <a href="#" class="link">
-          <span style="color: #74c0fc">Reset Password</span>
-        </a>
-      </p>
-      <p class="or">or</p>
-      <p class="sign-up">
-        Dont have an account?
-        <a href="/public/signup.html" class="link">
-          <span style="color: #339af0">Sign up now</span>
-        </a>
-      </p>
     </main>
-    <footer class="footer">
-      <div class="logo">
-        <img src="logo.png" alt="Logo" />
-      </div>
-
-      <div class="socials--container">
-        <ul class="socials">
-          <li>
-            <a href="#" class="footer-link"
-              ><ion-icon name="logo-twitter"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="footer-link"
-              ><ion-icon name="logo-github"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="footer-link"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>

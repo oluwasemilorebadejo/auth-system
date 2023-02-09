@@ -39,7 +39,12 @@ ul {
 }
 
 .logo img {
-  height: 5rem;
+  height: 3rem;
+}
+
+.logo--footer img {
+  height: 2rem;
+  padding-left: 1.8rem;
 }
 
 .heading--2 {
@@ -102,11 +107,6 @@ ul {
   border: 1px solid #ccc;
 }
 
-/* .btn--container {
-  display: flex;
-  justify-content: center;
-} */
-
 .btn,
 .btn:link,
 .btn:visited {
@@ -130,14 +130,8 @@ ul {
   white-space: nowrap;
 }
 
-/* .btn:link,
-.btn:visited {
-  background-color: #f3f2f2;
-}
-
-.btn--login:hover,
-.btn--full:active {
-  background-color: #00000038;
+/* .btn:hover {
+  background-color: #2e8bd8;
 } */
 
 .forgot-password {

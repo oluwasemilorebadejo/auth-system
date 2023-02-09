@@ -130,9 +130,9 @@ ul {
   white-space: nowrap;
 }
 
-/* .btn:hover {
-  background-color: #2e8bd8;
-} */
+.btn:hover {
+  background-color: #228be6;
+}
 
 .forgot-password {
   text-align: center;

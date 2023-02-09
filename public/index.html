@@ -44,6 +44,7 @@
     </header>
 
     <main>
+      <div></div>
       <h2 class="heading--2">Welcome Back</h2>
       <p class="cred-message">Enter your credentials to access this account.</p>
       <div class="form--container">
@@ -58,7 +59,7 @@
               class="form--input"
               type="text"
               id="username"
-              placeholder="Enter Username"
+              placeholder="Enter your email"
               name="username"
               required
             />
@@ -74,7 +75,7 @@
               type="password"
               id="password"
               name="password"
-              placeholder="••••••••"
+              placeholder="Enter your password"
               minlength="8"
               required
             />
@@ -86,7 +87,19 @@
         </form>
       </div>
 
-      <p class="forgot-password">Forgot your password? Reset Password</p>
+      <p class="forgot-password">
+        Forgot your password?
+        <a href="#" class="link">
+          <span style="color: #74c0fc">Reset Password</span>
+        </a>
+      </p>
+      <p class="or">or</p>
+      <p class="sign-up">
+        Dont have an account?
+        <a href="#" class="link">
+          <span style="color: #339af0">Sign up now</span>
+        </a>
+      </p>
     </main>
     <footer></footer>
   </body>

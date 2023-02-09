@@ -136,4 +136,28 @@ footer {
 
 .forgot-password {
   text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.or {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.sign-up {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
 }

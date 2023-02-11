@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const crypto = require("crypto");
+const bcrypt = require("bcryptjs");
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -19,9 +21,37 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: [true, "Kindly enter your password"],
+    required: [true, "Please enter your password"],
     minlength: [8, "password must be atleast 8 characters"],
     select: false,
   },
-  passwordConfirm: {},
+  passwordConfirm: {
+    type: String,
+    required: [true, "Please confirm your password"],
+    minlength: [8, "password must be atleast 8 characters"],
+    validate: {
+      validator: function (el) {
+        return el === this.password;
+      },
+      message: "passwords dont  match",
+    },
+  },
+  passwordChangedAt: Date,
+  passwordResetToken: String,
+  passwordResetExpires: Date,
 });
+
+userSchema.pre("save", async function (next) {
+  this.password = await bcrypt.hash(this.password, 10);
+
+  this.passwordConfirm = undefined;
+
+  next();
+});
+// /////////////////////////////////////////////////////////////////////////////////////////////
+// will implement checking actual password against supplied password for login, resetpassword///
+// /////////////////////////////////////////////////////////////////////////////////////////////
+
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
